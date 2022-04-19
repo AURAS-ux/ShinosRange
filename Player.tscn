@@ -1,11 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/JBOT-all animations-Sheet 01.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.cs" type="Script" id=2]
 
 [sub_resource type="Animation" id=1]
 resource_name = "run"
-length = 0.7
+length = 0.84
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("PlayerSprite:frame")
@@ -37,8 +37,26 @@ tracks/0/keys = {
 "values": [ 1, 2, 3, 4, 5, 6 ]
 }
 
+[sub_resource type="Animation" id=3]
+resource_name = "jump"
+length = 0.33
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("PlayerSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 40, 41, 42, 43 ]
+}
+
 [node name="Player" type="KinematicBody2D"]
 position = Vector2( 725, 466 )
+scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -57,3 +75,6 @@ anims/run = SubResource( 1 )
 
 [node name="idleStatus" type="AnimationPlayer" parent="."]
 anims/idle = SubResource( 2 )
+
+[node name="jumpAnimation" type="AnimationPlayer" parent="."]
+anims/jump = SubResource( 3 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DarkCastleGrid.png-af6a4912a60754fbf457d9b2a87d9e50.stex"
+path="res://.import/parallax-space-ring-planet.png-f173b9458f442f7e0a0961d3e78f6c63.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/DarkCastleGrid.png"
-dest_files=[ "res://.import/DarkCastleGrid.png-af6a4912a60754fbf457d9b2a87d9e50.stex" ]
+source_file="res://Assets/background/parallax-space-ring-planet.png"
+dest_files=[ "res://.import/parallax-space-ring-planet.png-f173b9458f442f7e0a0961d3e78f6c63.stex" ]
 
 [params]
 

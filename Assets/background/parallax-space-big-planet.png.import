@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rob.png-2061a28ac522e00950dc4c88ea33e00e.stex"
+path="res://.import/parallax-space-big-planet.png-e6548f907fcd966b99f4babfee7f9bb2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/rob.png"
-dest_files=[ "res://.import/rob.png-2061a28ac522e00950dc4c88ea33e00e.stex" ]
+source_file="res://Assets/background/parallax-space-big-planet.png"
+dest_files=[ "res://.import/parallax-space-big-planet.png-e6548f907fcd966b99f4babfee7f9bb2.stex" ]
 
 [params]
 
