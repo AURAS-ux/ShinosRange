@@ -63,7 +63,7 @@ __meta__ = {
 }
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -1, -23.5, -8, -23.5, -3, -13, -6, -12, -9, -3, -11, 4.5, -9, 15.5, -6.5, 19, -6, 25, -3, 25, -3.5, 21, -1.5, 19, -3, 17, -1.5, 14.5, 1.5, 15, 1.5, 19.5, 1, 23.5, 3, 25, 5, 25, 4, 21, 6.5, 19, 5.5, 17.5, 9, 16.5, 9, 13.5, 9, 8.5, 10.5, 7.5, 8.5, 5, 8.5, -2.5, 5.5, -6.5, 10, -16.5 )
+polygon = PoolVector2Array( -1, -23.5, -8, -23.5, -3, -13, -6, -12, -9, -3, -11, 4.5, -9, 15.5, -6.5, 19, -6, 25, -4, 24, -3.5, 21, -1.5, 19, -3, 17, -1.5, 14.5, 1.5, 15, 1.5, 19.5, 1, 23.5, 3, 25, 4, 24, 4, 21, 6.5, 19, 5.5, 17.5, 9, 16.5, 9, 13.5, 9, 8.5, 10.5, 7.5, 8.5, 5, 8.5, -2.5, 5.5, -6.5, 10, -16.5 )
 
 [node name="PlayerSprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )
@@ -78,3 +78,6 @@ anims/idle = SubResource( 2 )
 
 [node name="jumpAnimation" type="AnimationPlayer" parent="."]
 anims/jump = SubResource( 3 )
+
+[node name="Shooting_Position" type="Position2D" parent="."]
+position = Vector2( 20, -12 )
