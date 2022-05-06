@@ -60,6 +60,7 @@ public class Player : KinematicBody2D
             velocity += new Vector2(-10 * _moveSpeed * delta, 0);
             _playerAnim.Play("run");
             _playerSpirte.FlipH = true;
+            _positionShooting.Position *= -1;
             _idleAnimation.Stop();
         }
         else if (Input.IsKeyPressed((int)KeyList.D))
